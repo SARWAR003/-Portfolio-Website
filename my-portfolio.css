@@ -1,0 +1,16 @@
+my-portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── Header.js
+│   │   ├── About.js
+│   │   ├── Experience.js
+│   │   ├── Education.js
+│   │   ├── Skills.js
+│   │   ├── Certifications.js
+│   │   ├── Contact.js
+│   ├── App.js
+│   ├── index.js
+│   ├── App.css
+└── package.json
