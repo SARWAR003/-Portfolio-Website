@@ -86,6 +86,17 @@
         .btn:hover {
             background-color: #0056b3;
         }
+
+        /* Hover effect for skills list */
+        ul li:hover {
+            background-color: #f1f1f1;
+            transition: 0.3s ease;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
@@ -192,6 +203,36 @@
             <p>Feel free to connect with me on LinkedIn:</p>
             <p><a href="https://linkedin.com/in/md-golam-sarwar-7958b71b6" target="_blank">MD Golam Sarwar - LinkedIn</a></p>
             <a href="mailto:sarwar03483@gmail.com" class="btn">Contact Me</a>
+        </section>
+
+        <!-- Chart.js -->
+        <section>
+            <h2>Skill Proficiency Chart</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Python', 'SQL', 'Power BI', 'Tableau', 'MS Excel'],
+                        datasets: [{
+                            label: 'Skill Proficiency',
+                            data: [90, 80, 85, 70, 95],
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
         </section>
     </div>
     
